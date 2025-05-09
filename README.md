@@ -60,14 +60,29 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## How can I deploy this project to GitHub Pages?
 
-Simply open [Lovable](https://lovable.dev/projects/23bdc58b-0e07-4dfc-b7f3-449c1fa97c10) and click on Share -> Publish.
+This project is configured for automatic deployment to GitHub Pages. Simply:
 
-## Can I connect a custom domain to my Lovable project?
+1. Push your code to a GitHub repository
+2. The GitHub Action will automatically build and deploy to GitHub Pages
+3. Your site will be available at: `https://[your-github-username].github.io/[repository-name]/`
 
-Yes, you can!
+### Manual Deployment Steps
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Install dependencies:
+```sh
+npm install
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+2. Build the project:
+```sh
+npm run build
+```
+
+3. The built files will be in the `dist` directory
+
+## Can I connect a custom domain to my GitHub Pages site?
+
+Yes! Follow GitHub's guide:
+[Setting up a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
